@@ -3,6 +3,8 @@ package gbytes
 import (
 	"encoding/binary"
 	"fmt"
+	"github.com/whtmay/utils"
+
 	"unsafe"
 )
 

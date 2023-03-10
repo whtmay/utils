@@ -66,7 +66,7 @@ func (b *Buffer) CanWrite() int {
 	return b.capacity - b.writePos
 }
 func (b *Buffer) Bytes() []byte {
-	return b.buf
+	return b.buf[b.readPos:b.writePos]
 }
 func (b *Buffer) tryGrow(n int) bool {
 	if n > b.CanWrite() {
